@@ -13,6 +13,7 @@ Ambos endpoints esperar receber como entrada um Json contendo um array de jsons 
 
 Seguindo a estrutura abaixo: 
 
+```
 {
     "bugs": 
     [
@@ -22,6 +23,7 @@ Seguindo a estrutura abaixo:
         {"titulo": "Imagens do background da aplicação estão demorando para carregar", "idade": "1", "estimativa": 2, "prioridade": "Média"}
     ]
 }
+```
 
 ## Entendendo a estrutura de um "Bug" 
 
