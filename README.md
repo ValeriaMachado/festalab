@@ -29,17 +29,25 @@ Seguindo a estrutura abaixo:
 
 Todos os bugs serão formados de um titulo, idade, estimativa e prioridade. Para isso, foi definido que, por padrão o título de um bug sempre deverá ser uma *String*, a idade um *número inteiro* que represente o(s) dias desde o cadastro do bug, estimativa um *número flutuante* usando hora como unidade de medida e prioridade uma *String*.
 
-## Como utilizar a aplicação
+# Como utilizar a aplicação
+## Requisitos
 
-Após garantir a instação de todos os requisitos mencionados na última sessão deste documento, o usuário deverá executar o seguinte comando no terminal: 
+PHP versão 7.4 ou superior, com as seguintes extensões:
 
+- [intl](http://php.net/manual/en/intl.requirements.php)
+- [libcurl](http://php.net/manual/en/curl.requirements.php)
+- [composer](https://getcomposer.org/)
+
+Após garantir a instação de todos os requisitos mencionados, o usuário deverá executar o seguinte comando no terminal: 
+
+`composer update`
 `php spark serve`
 
 Após a excecução bem sucedida, voce receberá em tela o endereço do seu servidor local.
 Por padrão, a aplicação tentará utilizar o endereço: `http://localhost:8080`
 Uma vez que, você tenha seu endereço, basta concatenar com os endpoints das API's disponibilizadas. 
 
-Exemplo: 
+Exemplos: 
 `http://localhost:8080/Bug/forToday`
 `http://localhost:8080/Bug/separatedForDevs`
 
@@ -49,13 +57,6 @@ Para testar a aplicação, basta excecutar os seguintes comandos:
 
 `ln -s ./vendor/bin/phpunit ./phpunit`
 `./phpunit`
-
-## Requisitos
-
-PHP versão 7.4 ou superior, com as seguintes extensões:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [libcurl](http://php.net/manual/en/curl.requirements.php)
 
 ## Mini mapa de acesso rápido ao código :)
 
